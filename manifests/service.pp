@@ -13,6 +13,7 @@
 define supervisor::service (
   $command,
   $ensure                   = 'present',
+  $process_name             = undef,
   $numprocs                 = 1,
   $numprocs_start           = 0,
   $priority                 = 999,
